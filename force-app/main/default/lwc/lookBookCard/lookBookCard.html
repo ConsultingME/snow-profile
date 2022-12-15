@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-m-around_small lookbook-card">
+          <image src={astroProfilePic}/>
+          <div class="slds-p-around_small">
+               <div class="lookbook-names slds-truncate">{firstName} {lastName}</div>
+               <lightning-layout>
+                    <lightning-layout-item>
+                         <div class="lookbook-city slds-truncate">{city}, {state}</div>
+                    </lightning-layout-item>
+                    <lightning-layout-item alignment-bump="left">
+                         <lightning-icon icon-name="utility:info_alt" size="xx-small"></lightning-icon>
+                    </lightning-layout-item>
+               </lightning-layout>
+          </div>
+    </div>
+</template>

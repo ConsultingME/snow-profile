@@ -1,0 +1,10 @@
+.lookbook-header {
+     color: var(--c-colorTextBrand);
+     font-size: 2.5rem;
+}
+
+.lookbook-groupheader {
+     color: var(--c-colorTextBrand);
+     font-size: 1.75rem;
+     font-weight: bold;
+}
