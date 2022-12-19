@@ -1,0 +1,53 @@
+.modal {
+     display: flex;
+     height: 100%;
+     left: 0;
+     position: fixed;
+     top: 0;
+     width: 100%;
+ }
+ .modal.open {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .lookbook-profile-container {
+     background-color: #ffffff;
+     margin: auto;
+     height: 90%;
+     width: 90%;
+     overflow-y: hidden;
+     box-shadow: rgba(96, 95, 102, 0.25) 0px 48px 100px 0px;
+     border: 1px solid var(--c-colorTextBrand);
+ }
+
+.lookbook-profile-header {
+     padding: 0.5rem;
+}
+
+.lookbook-profile-main {
+     padding: 0 2rem 2rem 2rem;
+}
+
+.lookbook-profile-name {
+     font-size: 2.5rem;
+     color: var(--c-colorTextBrand);
+     margin-bottom: 1rem;
+     font-weight: 400;
+}
+
+.lookbook-profile-data {
+     font-weight: bold;
+     font-size: 0.95rem;
+     margin-bottom: 1rem;
+}
+
+.lookbook-img-quotes {
+     width: 60px;
+     margin-right: 1.5rem;
+}
+
+.lookbook-profile-pic-container {
+     margin-top: -3rem;
+     margin-right: -2rem;
+}

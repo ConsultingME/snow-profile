@@ -1,25 +1,41 @@
 <template>
-    <div class="lookbook-profile-container slds-clearfix">
-          <div class="slds-float_right">
-               <lightning-button-icon icon-name="utility:close" variant="container"></lightning-button-icon>
-          </div>
-          <lightning-layout>
-               <lightning-layout-item size="8">
-                    <div>
-                         <div class="lookbook-profile-name">Jennifer Reid</div>
-                         <div class="lookbook-profile-data">Patient</div>
-                         <div class="lookbook-profile-data">Diagnosed 08/01/2016</div>
-                         <div class="lookbook-profile-data">On Treatment since 08/01/2016</div>
-                         <div class="lookbook-profile-data">Living with aHUS</div>
-                    </div>
+     <div class="modal">
+          <div class="lookbook-profile-container">
+               
+               <div class="lookbook-profile-header">
                     <lightning-layout>
-                         <lightning-layout-item></lightning-layout-item>
-                         <lightning-layout-item></lightning-layout-item>
+                         <lightning-layout-item alignment-bump="left">
+                              <lightning-button-icon icon-name="utility:close" alternative-text="Close" onclick={handleProfileClick}></lightning-button-icon>
+                         </lightning-layout-item>
                     </lightning-layout>
-               </lightning-layout-item>
-               <lightning-layout-item size="4">
+               </div>
 
-               </lightning-layout-item>
-          </lightning-layout>
-    </div>
+               <div class="lookbook-profile-main">
+                    <lightning-layout>
+                         <lightning-layout-item size="5">
+                              <div>
+                                   <div class="lookbook-profile-name">Jennifer Reid</div>
+                                   <div class="lookbook-profile-data">Patient</div>
+                                   <div class="lookbook-profile-data">Diagnosed 08/01/2016</div>
+                                   <div class="lookbook-profile-data">On Treatment since 08/01/2016</div>
+                                   <div class="lookbook-profile-data">Living with aHUS</div>
+                              </div>
+                              <lightning-layout class="slds-m-top_xx-large">
+                                   <lightning-layout-item flexibility="no-flex">
+                                        <image src={lookbookQuotes} class="lookbook-img-quotes"/>
+                                   </lightning-layout-item>
+                                   <lightning-layout-item>
+                                        Collaborative podcasting x generation fruit identify performing proposition. User end from world domination bottom tail synopsis of evolved. Solely the while multiple at taking strategy workflows taking heading frameworks generation added further. The convergence start low proposition test strategies overall grow podcasting deep. Innovation for management hanging identify overviews for and with for line fruit normal.
+                                   </lightning-layout-item>
+                              </lightning-layout>
+                         </lightning-layout-item>
+                         <lightning-layout-item alignment-bump="left" size="4" class="lookbook-profile-pic-container">
+                              <img src={lookbookProfilePic}/>
+                         </lightning-layout-item>
+                    </lightning-layout>
+               </div>
+
+          </div>
+      </div>
+    
 </template>

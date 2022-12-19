@@ -1,8 +1,8 @@
 import { LightningElement, api } from 'lwc';
-import LightningModal from 'lightning/modal';
+import LOOKBOOK_ASSETS from '@salesforce/resourceUrl/LookbookAssets';
 
 export default class LookBookProfile extends LightningElement {
-     @api content;
-
+     lookbookQuotes = LOOKBOOK_ASSETS + '/quotes.png';
+     lookbookProfilePic = LOOKBOOK_ASSETS + '/profile-pic-example.png';
      
 }
