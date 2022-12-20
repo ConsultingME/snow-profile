@@ -8,24 +8,23 @@
             <div class="lookbook-groupheader slds-m-bottom_x-small slds-m-left_large">gMG Speakers</div>
             <lightning-layout multiple-rows="true">
                 <c-look-book-card first-name="Olivier" last-name="Giroud" city="Paris" state="New Hampshire" onclick={handleCardClick}></c-look-book-card>
-                <c-look-book-card first-name="Hugo" last-name="Lloris" city="Paris" state="New Hampshire"></c-look-book-card>
-                <c-look-book-card first-name="Theo" last-name="Hernandez" city="Paris" state="New Hampshire"></c-look-book-card>
-                <c-look-book-card first-name="Jules" last-name="Kounde" city="Paris" state="New Hampshire"></c-look-book-card>
+                <c-look-book-card first-name="Hugo" last-name="Lloris" city="Paris" state="New Hampshire" onclick={handleCardClick}></c-look-book-card>
+                <c-look-book-card first-name="Theo" last-name="Hernandez" city="Paris" state="New Hampshire" onclick={handleCardClick}></c-look-book-card>
+                <c-look-book-card first-name="Jules" last-name="Kounde" city="Paris" state="New Hampshire" onclick={handleCardClick}></c-look-book-card>
             </lightning-layout>
         </div>
         <div>
             <div class="lookbook-groupheader slds-m-bottom_x-small slds-m-left_large">HPP Speakers</div>
             <lightning-layout multiple-rows="true">
-                <c-look-book-card first-name="Antonine" last-name="Griezmann" city="Paris" state="New Hampshire"></c-look-book-card>
-                <c-look-book-card first-name="Raphael" last-name="Varane" city="Paris" state="New Hampshire"></c-look-book-card>
-                <c-look-book-card first-name="Kylian" last-name="Mbappe" city="Paris" state="New Hampshire"></c-look-book-card>
+                <c-look-book-card first-name="Antonine" last-name="Griezmann" city="Paris" state="New Hampshire" onclick={handleCardClick}></c-look-book-card>
+                <c-look-book-card first-name="Raphael" last-name="Varane" city="Paris" state="New Hampshire" onclick={handleCardClick}></c-look-book-card>
+                <c-look-book-card first-name="Kylian" last-name="Mbappe" city="Paris" state="New Hampshire" onclick={handleCardClick}></c-look-book-card>
             </lightning-layout>
         </div>
     </div>
-    {displayProfile}
 
     <template if:true={displayProfile}>
-        <c-look-book-profile></c-look-book-profile>
+        <c-look-book-profile onprofileclose={handleProfileClick}></c-look-book-profile>
     </template>
 
 </template>
