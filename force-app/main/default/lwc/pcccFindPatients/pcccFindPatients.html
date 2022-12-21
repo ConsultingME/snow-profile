@@ -1,0 +1,30 @@
+<template>
+     <div>
+          <lightning-layout>
+               <lightning-layout-item size="3" class="slds-p-around_small slds-m-right_small patient-filter">
+                    <lightning-tree items={items} header="Filter"></lightning-tree>
+               </lightning-layout-item>
+               <lightning-layout-item flexibility="grow">
+                    <div class="slds-m-bottom_small patient-header-text">105 Partners</div>
+                    <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California"></c-pccc-find-patients-card>
+                    <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah"></c-pccc-find-patients-card>
+               </lightning-layout-item>
+               <lightning-layout-item size="3">
+                    <div class="patients-selected-container">
+                         <div class="slds-m-bottom_small patient-header-text">3 Selected</div>
+                         <c-pccc-find-patients-card patient-name="M.L. Carr" patient-location="Scarmento, California" patient-status="Availability Requested" patient-selected="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Bill Walton" patient-location="Los Angeles, California" patient-status="Availability Requested" patient-selected="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Rick Carlisle" patient-location="Orono, Maine" patient-status="Availability Requested" patient-selected="true"></c-pccc-find-patients-card>
+                    </div>
+               </lightning-layout-item>
+          </lightning-layout>
+     </div>
+</template>

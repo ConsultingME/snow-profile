@@ -1,11 +1,20 @@
-img {
+.lookbook-card-large {
      width: 200px;
      height: 200px;
+}
+
+.lookbook-card-small {
+     width: 64px;
+     height: 64px;
 }
 
 .lookbook-card {
      box-shadow: rgba(96, 95, 102, 0.15) 0px 48px 100px 0px;
      cursor: pointer;
+}
+
+.lookbook-card-data {
+     background-color: #ffffff;
 }
 
 .lookbook-names {

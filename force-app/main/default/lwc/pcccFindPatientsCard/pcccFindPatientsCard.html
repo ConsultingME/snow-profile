@@ -1,0 +1,18 @@
+<template>
+     <lightning-layout vertical-align="center" class="slds-m-bottom_small">
+          <lightning-layout-item>
+               <lightning-input type="checkbox-button" label="Input One" name="input1" checked={patientSelected}></lightning-input>
+          </lightning-layout-item>
+          <div class="slds-m-left_small">
+               <div class="patient-name">
+                    {patientName}
+               </div>
+               <div class="patient-location">
+                    {patientLocation}
+               </div>
+               <div class="patient-location">
+                    {patientStatus}
+               </div>
+          </div>
+     </lightning-layout>
+</template>
