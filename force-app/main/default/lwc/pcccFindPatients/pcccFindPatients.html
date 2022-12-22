@@ -1,29 +1,110 @@
 <template>
      <div>
           <lightning-layout>
-               <lightning-layout-item size="3" class="slds-p-around_small slds-m-right_small patient-filter">
+               <lightning-layout-item class="slds-p-around_small slds-m-right_small patient-filter">
                     <lightning-tree items={items} header="Filter"></lightning-tree>
                </lightning-layout-item>
-               <lightning-layout-item flexibility="grow">
-                    <div class="slds-m-bottom_small patient-header-text">105 Partners</div>
-                    <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California"></c-pccc-find-patients-card>
-                    <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah"></c-pccc-find-patients-card>
+               <lightning-layout-item flexibility="grow" class="patient-list">
+
+                    <lightning-layout class="slds-m-bottom_small" vertical-align="center">
+                         <div class="patient-header-text">105 Partners</div>
+                         <lightning-layout-item alignment-bump="left">
+                              <lightning-button-icon icon-name="utility:new" alternative-text="Remove All" ></lightning-button-icon>
+                         </lightning-layout-item>   
+                    </lightning-layout>
+
+                    
+                    <div class="patient-list-container">
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Larry Bird" patient-location="Paris, New Hampshire" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Kevin McHale" patient-location="St. Joesph, Missouri" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Robert Parish" patient-location="Highland Park, Illinois" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Dennis Johnson" patient-location="Scarmento, California" show-checkbox="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Danny Ainge" patient-location="Orem, Utah" show-checkbox="true"></c-pccc-find-patients-card>
+                    </div>
                </lightning-layout-item>
                <lightning-layout-item size="3">
-                    <div class="patients-selected-container">
-                         <div class="slds-m-bottom_small patient-header-text">3 Selected</div>
-                         <c-pccc-find-patients-card patient-name="M.L. Carr" patient-location="Scarmento, California" patient-status="Availability Requested" patient-selected="true"></c-pccc-find-patients-card>
-                         <c-pccc-find-patients-card patient-name="Bill Walton" patient-location="Los Angeles, California" patient-status="Availability Requested" patient-selected="true"></c-pccc-find-patients-card>
-                         <c-pccc-find-patients-card patient-name="Rick Carlisle" patient-location="Orono, Maine" patient-status="Availability Requested" patient-selected="true"></c-pccc-find-patients-card>
+                    <div class="patients-selected-container slds-m-bottom_medium">
+
+                         <lightning-layout class="slds-m-bottom_small" vertical-align="center">
+                              <div class="patient-header-text">3 Selected</div>
+                              <lightning-layout-item alignment-bump="left">
+                                   <lightning-button-icon icon-name="utility:clear" alternative-text="Remove All" ></lightning-button-icon>
+                              </lightning-layout-item>   
+                         </lightning-layout>
+                         
+                         
+                         <lightning-layout class="slds-m-bottom_small" horizontal-align="center">
+                              <lightning-button label="Request Availability" variant="brand"></lightning-button>
+                         </lightning-layout>
+                         
+                         <c-pccc-find-patients-card patient-name="M.L. Carr" patient-location="Scarmento, California" show-checkbox="true" patient-status="Availability Requested" patient-selected="true" ></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Bill Walton" patient-location="Los Angeles, California" show-checkbox="true" patient-status="Availability Requested" patient-selected="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Rick Carlisle" patient-location="Orono, Maine" show-checkbox="true" patient-status="Availability Requested" patient-selected="true" ></c-pccc-find-patients-card>
+
                     </div>
+
+                    <div class="patients-selected-container">
+
+                         <div class="slds-m-bottom_small patient-header-text">2 Requests</div>
+                         
+                         <c-pccc-find-patients-card patient-name="Allen Iverson" patient-location="Scarmento, California" patient-status="Availability Requested" patient-selected="true" show-status="true" show-profile-pic="true"></c-pccc-find-patients-card>
+                         <c-pccc-find-patients-card patient-name="Paul Pierce" patient-location="Los Angeles, California" patient-status="Availability Requested" patient-selected="true" show-status="true" show-profile-pic="true"></c-pccc-find-patients-card>
+
+                         <div class="patients-selected-showall slds-text-align_center">
+                              <a href="#">Show All</a>
+                         </div>
+                    </div>
+
                </lightning-layout-item>
           </lightning-layout>
      </div>

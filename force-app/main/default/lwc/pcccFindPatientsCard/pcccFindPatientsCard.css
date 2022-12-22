@@ -8,6 +8,10 @@
      font-weight: 300;
 }
 
-.status-request {
-     color: blue
+.profile-pic {
+     height: 60px;
+}
+
+.status-requested {
+     color: #3093ED
 }

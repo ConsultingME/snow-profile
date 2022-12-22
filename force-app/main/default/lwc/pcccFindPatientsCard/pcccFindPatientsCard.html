@@ -1,8 +1,15 @@
 <template>
-     <lightning-layout vertical-align="center" class="slds-m-bottom_small">
-          <lightning-layout-item>
-               <lightning-input type="checkbox-button" label="Input One" name="input1" checked={patientSelected}></lightning-input>
+     <lightning-layout vertical-align="center" horizontal-align="start" class="slds-m-bottom_small">
+          
+          <lightning-layout-item >
+               <template if:true={showCheckbox}>
+                    <lightning-input type="checkbox-button" label="Input One" name="input1" checked={patientSelected}></lightning-input>
+               </template>
+               <template if:true={showProfilePic}>
+                    <img src={astroProfilePicSmall} class="profile-pic"/>
+               </template>
           </lightning-layout-item>
+
           <div class="slds-m-left_small">
                <div class="patient-name">
                     {patientName}
@@ -10,9 +17,12 @@
                <div class="patient-location">
                     {patientLocation}
                </div>
-               <div class="patient-location">
-                    {patientStatus}
-               </div>
+               <template if:true={showStatus}>
+                    <div class="patient-location status-requested" >
+                         {patientStatus}
+                    </div>
+               </template>
           </div>
+
      </lightning-layout>
 </template>
